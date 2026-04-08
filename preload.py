@@ -16,7 +16,7 @@ def preload():
     print("🔄 Preloading AI model into RAM...")
 
     requests.post(OLLAMA_URL, json={
-        "model": "phi3",
+        "model": "gemma:2b",
         "prompt": "Initialize system",
         "keep_alive": -1,
         "stream": False
